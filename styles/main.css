@@ -1,0 +1,235 @@
+
+body, html {
+	height: 100%;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.main-menu{
+	float: right;
+}
+
+.row1{
+	min-height: 600px;
+	width: 100%;
+	background-color: lightgrey;
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+}
+
+
+
+.parallax{
+	background-image: url(../assets/twerk-hero-2.jpg);
+	height: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+
+
+
+.mid{
+  	font-family: 'Roboto', sans-serif;
+  	font-weight: 900;
+  	color: white;
+  	text-transform: uppercase;
+  	margin: 0;
+  	position: absolute;
+  	top: 60%;
+  	left: 50%;
+  	font-size: 2rem;
+  	transform: translate(-50%, -50%);
+}
+
+.main-title{
+	color: white;
+	font-size: 48px;
+	font-weight: 900;
+	
+}
+
+.main-sub-title{
+	color: white;
+	font-size: 48px;
+	font-weight: 900;
+}
+
+
+.row2{
+	min-height: 250px;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+
+}
+
+
+.left-side-column{
+	padding-top: 35px;
+	padding-bottom: 35px;
+	box-sizing: border-box;
+}
+
+.right-side-column{
+	padding-top: 35px;
+	padding-bottom: 35px;
+	box-sizing: border-box;
+}
+
+.section-title{
+	text-align: center;
+	justify-content: center;
+	font-size: 30px;
+	padding-top: 65px;
+	padding-bottom: 25px;
+	margin: auto;
+	/*color: rgb(181, 30, 250);*/
+}
+
+
+.about-text{
+	padding: 10px;
+	text-align: center;
+	font-size: 16px;
+}
+
+
+.row3{
+	min-height: 250px;
+	width: 100%;
+	background-color: lightgrey;
+	border-bottom: 1px solid black;
+	opacity: 50%;
+	box-sizing: border-box;
+
+}
+
+
+.row4{
+	min-height: 250px;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+}
+
+
+.row5{
+	min-height: 250px;
+	width: 100%;
+	background-color: lightgrey;
+	border-bottom: 1px solid black;
+	opacity: 50%;
+	box-sizing: border-box;
+}
+
+
+.image-holder{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+
+}
+
+.partner{
+	width: 100%;
+}
+
+.partner-logos{
+	padding: 15px;
+	float: left;
+
+
+}
+
+
+.row6{
+	min-height: 250px;
+	width: 100%;
+	background-color: rgb(173, 171, 171);
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+}
+
+
+.footer-column{
+	float: left;
+	box-sizing: border-box;
+}
+
+
+.join-us-title{
+	color: rgb(101, 29, 149);
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 15px;
+}
+
+
+.mailing-title{
+	color: rgb(101, 29, 149);
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.nav-links{
+	padding-top: 40px;
+	text-align: center;
+}
+
+.link-format{
+	color: rgb(101, 29, 149);
+	padding-bottom: 15px;
+
+}
+
+.join-us-text{
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
+.icon-styles{
+	width: 100%;
+	margin: 0 auto;
+	font-size: 28px;
+	padding: 25px;
+	text-align: center;
+	
+}
+
+/*.footer-nav {    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+*/
+
+
+
+
+
+
