@@ -45,22 +45,37 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.92;
 
 }
 
 
+.banner{
+	float: right;
+	position: absolute;
+	top: 13%;
+	left: 65%;
+	opacity: 0.8;
+}
+
+.banner-text{
+	color: white;
+	font-family: 'Gruppo', cursive;
+	float: right;
+	position: absolute;
+	top: 15.5%;
+	left: 67.5%;
+	font-size: 20px;
+}
 
 .h1-block{
 	display: block;
 }
 
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
-
-
 
 .mid{
-  	font-family: 'Roboto', sans-serif;
+  	font-family: 'Gruppo', cursive;
   	font-weight: 900;
   	color: white;
   	text-transform: uppercase;
@@ -74,15 +89,17 @@ body, html {
 
 .main-title{
 	color: white;
-	font-size: 48px;
+	font-size: 60px;
 	font-weight: 900;
+	font-family: 'Sumana', serif;
 	
 }
 
 .main-sub-title{
 	color: white;
-	font-size: 48px;
+	font-size: 42px;
 	font-weight: 900;
+	font-family: 'Sumana', serif;
 }
 
 
@@ -114,8 +131,9 @@ body, html {
 	justify-content: center;
 	font-size: 30px;
 	padding-top: 65px;
-	padding-bottom: 25px;
+	padding-bottom: 35px;
 	margin: auto;
+	font-family: 'Julius Sans One', sans-serif;
 	/*color: rgb(181, 30, 250);*/
 }
 
@@ -150,12 +168,14 @@ body, html {
 }
 
 
-.insta-container{
+.image-container{
 	width: 85%;
+	margin: 0 auto;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding-bottom: 40px;
 
 }
 
@@ -170,13 +190,6 @@ body, html {
 }
 
 
-.image-holder{
-	width: 85%;
-	margin: auto;
-	display: flex;
-	justify-content: center;
-
-}
 
 .partner{
 	width: 100%;
@@ -189,6 +202,20 @@ body, html {
 
 }
 
+.partner-logo-container{
+	margin-right: 0px;
+
+}
+
+.small{
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+}
+
+.bottom{
+	padding-bottom: 45px;
+}
 
 .row6{
 	min-height: 250px;
@@ -238,7 +265,6 @@ body, html {
 
 
 
-
 .icon-styles{
 	width: 100%;
 	margin: 0 auto;
@@ -255,8 +281,12 @@ body, html {
 }
 */
 
+/*abouttheinstructor*/
 
+.brandon-photo{
+	float: left;
+}
 
+.brandon{
 
-
-
+}
