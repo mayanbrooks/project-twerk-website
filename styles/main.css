@@ -11,16 +11,6 @@ body, html {
 }
 
 
-
-.main-menu{
-	float: right;
-	color: rgb(101, 29, 149);
-}
-
-.menu-size{
-	max-width: 100%;
-}
-
 .logo-size{
 	float: right;
 
@@ -28,7 +18,7 @@ body, html {
 
 
 .row1{
-	min-height: 600px;
+	min-height: 500px;
 	width: 100%;
 	background-color: lightgrey;
 	border-bottom: 3px solid;
@@ -36,7 +26,54 @@ body, html {
 	box-sizing: border-box;
 }
 
+.above{
+	background-color: white;
+	min-height: 180px;
+	margin: 0 auto;
+	text-align: center;
+	border: none;
+}
 
+.top-title{
+	font-size: 60px;
+	font-weight: 900;
+	font-family: 'Gruppo', cursive;
+	padding-top: 45px;
+	padding-bottom: 0px;
+	margin: 0 auto;
+
+}
+
+.by-brandon{
+	font-size: 20px;
+	font-family: 'Gruppo', cursive;
+	margin: 0 auto;
+	padding-top: 0px;
+}
+
+.top-nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 65px;
+	font-size: 27px;
+	font-family: 'Gruppo', cursive;
+	padding-bottom: 65px;
+	margin: 0 auto;
+}
+
+
+.main-menu{
+	color: black;
+	float:left;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+
+main-menu:hover{
+	color: purple;
+}
 
 .parallax{
 	background-image: url(../assets/twerk-hero-2.jpg);
@@ -53,7 +90,7 @@ body, html {
 .banner{
 	float: right;
 	position: absolute;
-	top: 13%;
+	top: 55%;
 	left: 65%;
 	opacity: 0.8;
 }
@@ -63,7 +100,7 @@ body, html {
 	font-family: 'Gruppo', cursive;
 	float: right;
 	position: absolute;
-	top: 15.5%;
+	top: 57.5%;
 	left: 67.5%;
 	font-size: 20px;
 }
@@ -81,7 +118,7 @@ body, html {
   	text-transform: uppercase;
   	margin: 0;
   	position: absolute;
-  	top: 60%;
+  	top: 100%;
   	left: 50%;
   	font-size: 2rem;
   	transform: translate(-50%, -50%);
@@ -89,7 +126,7 @@ body, html {
 
 .main-title{
 	color: white;
-	font-size: 60px;
+	font-size: 48px;
 	font-weight: 900;
 	font-family: 'Sumana', serif;
 	
@@ -97,7 +134,7 @@ body, html {
 
 .main-sub-title{
 	color: white;
-	font-size: 42px;
+	font-size: 48px;
 	font-weight: 900;
 	font-family: 'Sumana', serif;
 }
@@ -133,7 +170,7 @@ body, html {
 	padding-top: 65px;
 	padding-bottom: 35px;
 	margin: auto;
-	font-family: 'Julius Sans One', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	/*color: rgb(181, 30, 250);*/
 }
 
@@ -144,6 +181,12 @@ body, html {
 	font-size: 16px;
 }
 
+
+.google-map-widget{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
 .row3{
 	min-height: 250px;
@@ -158,6 +201,41 @@ body, html {
 
 }
 
+/*media query to stack items if screen*/
+
+@media only screen and (min-width: 688px) {
+
+	.youtube-embed {width: 100%;}
+	.spotify-embed {width: 100%;}
+}
+
+.youtube-title{
+	padding-left: 23px;
+
+}
+
+.spotify-title{
+	padding-right: 23px;
+
+}
+
+.youtube-embed{
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 55px;
+	margin: 0 auto;
+	padding-left: 45px;
+}
+
+.spotify-embed{
+	text-align: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 45px;
+	padding-bottom: 55px;
+
+}
 
 .row4{
 	min-height: 250px;
@@ -273,6 +351,7 @@ body, html {
 	text-align: center;
 	
 }
+
 
 /*.footer-nav {    
     position: absolute;
