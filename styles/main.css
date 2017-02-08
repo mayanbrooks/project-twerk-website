@@ -12,17 +12,21 @@ body, html {
 
 
 .logo-size{
-	float: right;
-
+	display: flex;
+	margin: 0 auto;
+	flex-direction: row;
+	justify-content: center;
 }
 
+
+.section-border{
+	border-bottom: 2px solid black;
+}
 
 .row1{
 	min-height: 500px;
 	width: 100%;
-	background-color: lightgrey;
-	border-bottom: 3px solid;
-	border-bottom-color: rgb(101, 29, 149);
+	background-color: white;
 	box-sizing: border-box;
 }
 
@@ -48,6 +52,7 @@ body, html {
 	font-size: 20px;
 	font-family: 'Gruppo', cursive;
 	margin: 0 auto;
+	display: block;
 	padding-top: 0px;
 }
 
@@ -140,12 +145,20 @@ main-menu:hover{
 }
 
 
+.circ-sizing{
+	max-height: 150px;
+    max-width: 150px; 
+    border-radius: 50%;
+    border: 1em solid transparent;
+    white-space: nowrap;
+
+}
+
 .row2{
 	min-height: 250px;
 	width: 100%;
 	background-color: white;
 	border-bottom: 2px solid;
-	border-bottom-color: rgb(101, 29, 149);
 	box-sizing: border-box; 
 
 }
@@ -191,12 +204,10 @@ main-menu:hover{
 .row3{
 	min-height: 250px;
 	width: 100%;
-	background-color: lightgrey;
+	background-color: white;
 	border-bottom: 2px solid;
 	border-top: 2px solid;
 	border-top-color: gold;
-	border-bottom-color: rgb(101, 29, 149);
-	opacity: 50%;
 	box-sizing: border-box;
 
 }
@@ -241,7 +252,6 @@ main-menu:hover{
 	min-height: 250px;
 	width: 100%;
 	background-color: white;
-	border-bottom: 1px solid black;
 	box-sizing: border-box;
 }
 
@@ -261,8 +271,7 @@ main-menu:hover{
 .row5{
 	min-height: 250px;
 	width: 100%;
-	background-color: lightgrey;
-	border-bottom: 1px solid black;
+	background-color: white;
 	opacity: 50%;
 	box-sizing: border-box;
 }
@@ -276,6 +285,9 @@ main-menu:hover{
 .partner-logos{
 	padding: 20px;
 	float: left;
+	border: 1px solid white;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 
 
 }
@@ -299,7 +311,6 @@ main-menu:hover{
 	min-height: 250px;
 	width: 100%;
 	background-color: rgb(173, 171, 171);
-	border-bottom: 1px solid black;
 	box-sizing: border-box;
 }
 
@@ -362,10 +373,44 @@ main-menu:hover{
 
 /*abouttheinstructor*/
 
-.brandon-photo{
+.about-brandon{
 	float: left;
+	margin: 0;
+	
 }
 
-.brandon{
+
+.mycontainer{
+	width: 85%;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
