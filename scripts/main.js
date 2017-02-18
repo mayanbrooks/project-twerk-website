@@ -1,19 +1,37 @@
 $('.main-menu').hover(function(){
-    $(this).css("color", "purple");
+    $(this).css("color", "purple")
 });
 
 
 
 
 
-$('.js-submit').click(function())
+$('.js-submit').click(function(){
 
-}
+});
+
+// function doSomthing(){
+// 	alert('Hi!');
+// }
+
+// $('body').click(doSomthing);
+
+
+
+
 
 
 $('.main-sub-title')
   .transition('fly right')
 ;
+
+
+
+
+
+
+
+
 
 
 $('.resizableImage').hover(makeBigger, returnToOriginalSize);
@@ -23,3 +41,4 @@ function makeBigger() {
 }
 function returnToOriginalSize() {
     $(this).css({height: "180px", width: "250px"});
+}

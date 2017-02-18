@@ -95,8 +95,8 @@ main-menu:hover{
 .banner{
 	float: right;
 	position: absolute;
-	top: 55%;
-	left: 65%;
+	top: 59%;
+	left: 69%;
 	opacity: 0.8;
 }
 
@@ -105,9 +105,9 @@ main-menu:hover{
 	font-family: 'Gruppo', cursive;
 	float: right;
 	position: absolute;
-	top: 57.5%;
-	left: 67.5%;
-	font-size: 20px;
+	top: 61%;
+	left: 74.5%;
+	font-size: 24px;
 }
 
 .h1-block{
@@ -145,14 +145,62 @@ main-menu:hover{
 }
 
 
-.circ-sizing{
-	max-height: 150px;
-    max-width: 150px; 
-    border-radius: 50%;
-    border: 1em solid transparent;
-    white-space: nowrap;
+.mycontainer{
+	width: 85%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.row1-sub-title{
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Gruppo', cursive;
+	font-size: 65px;
+	padding-top: 60px;
 
 }
+
+.circ-wrapper{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.circ-position{
+	float: left;
+	padding: 15px;
+	padding-top: 60px;
+}
+
+.circ-sizing{
+	display: inline-block;
+  	position: relative;
+  	width: 250px;
+  	height: 250px;
+  	overflow: hidden;
+ 	border-radius: 50%;
+
+
+}
+
+.circ-image{
+	width: auto;
+  	height: 100%;
+  	margin-left: -50px;
+
+}
+
+
+.circ-title-below{
+	font-size: 22px;
+	font-family: 'Sumana', serif;
+	color: black;
+	margin: 0 auto;
+	position: relative;
+}
+
+
 
 .row2{
 	min-height: 250px;
@@ -379,13 +427,6 @@ main-menu:hover{
 	
 }
 
-
-.mycontainer{
-	width: 85%;
-	margin: 0 auto;
-	padding: 0;
-
-}
 
 
 
