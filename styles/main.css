@@ -19,10 +19,6 @@ body, html {
 }
 
 
-.section-border{
-	border-bottom: 2px solid black;
-}
-
 .row1{
 	min-height: 500px;
 	width: 100%;
@@ -157,60 +153,136 @@ main-menu:hover{
 	font-family: 'Gruppo', cursive;
 	font-size: 65px;
 	padding-top: 60px;
+	color: #732673;
 
 }
 
-.circ-wrapper{
-	margin: 0 auto;
-	display: flex;
+.section-title{
+	text-align: center;
 	justify-content: center;
-	flex-direction: row;
+	font-size: 30px;
+	padding-top: 65px;
+	padding-bottom: 35px;
+	margin: auto;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+}
+
+
+.about-text{
+	padding: 10px;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.circ-wrapper{
+	width: 85%;
+	margin: 0 auto;
 }
 
 .circ-position{
 	float: left;
 	padding: 15px;
 	padding-top: 60px;
+	width: 33%;
+	box-sizing: border-box;
 }
 
+
 .circ-sizing{
-	display: inline-block;
-  	position: relative;
-  	width: 250px;
-  	height: 250px;
+  	width: 230px;
+  	height: 230px;
   	overflow: hidden;
  	border-radius: 50%;
-
-
 }
 
 .circ-image{
 	width: auto;
   	height: 100%;
   	margin-left: -50px;
-
 }
 
 
 .circ-title-below{
-	font-size: 22px;
-	font-family: 'Sumana', serif;
-	color: black;
+	font-size: 20px;
+	font-family: 'Gruppo', cursive;
+	font-weight: 900;
+	color: #732673;
 	margin: 0 auto;
-	position: relative;
+	text-align: center;
+	padding-top: 20px;
 }
 
+.para{
+	padding: none;
+	color: black;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+@media (max-width: 977px) { /*breakpoint*/
+    .circ-position {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 977px) { /*breakpoint*/
+    .para {
+        display: block;
+        width: 33%;
+        text-align: left;
+       }
+} 
 
 
 .row2{
 	min-height: 250px;
 	width: 100%;
 	background-color: white;
-	border-bottom: 2px solid;
+	/*background-color: #732673;*/
+	/*background-color: rgba(96, 32, 96, 0.9);*/
 	box-sizing: border-box; 
+	
+}
+
+.row2-title-wrapper{
+	width: 47%;
+	float: left;
+	margin: 0 auto;
+}
+
+.row2-title{
+	font-size: 36px;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 65px;
+	padding-bottom: 35px;
+	padding-left: 180px;
+	color: black;
+	margin: 0 auto;
 
 }
 
+.row2-text{
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 15px;
+	padding-left: 180px;
+	color: black;
+	margin: 0 auto;
+
+}
+
+.google-map-widget{
+	float: left;
+	/*padding-top: 80px;
+	padding-bottom: 55px;*/
+	padding-right: 50px;
+}
 
 .left-side-column{
 	padding-top: 35px;
@@ -224,38 +296,11 @@ main-menu:hover{
 	box-sizing: border-box;
 }
 
-.section-title{
-	text-align: center;
-	justify-content: center;
-	font-size: 30px;
-	padding-top: 65px;
-	padding-bottom: 35px;
-	margin: auto;
-	font-family: 'Raleway', sans-serif;
-	/*color: rgb(181, 30, 250);*/
-}
-
-
-.about-text{
-	padding: 10px;
-	text-align: center;
-	font-size: 16px;
-}
-
-
-.google-map-widget{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
 
 .row3{
 	min-height: 250px;
 	width: 100%;
 	background-color: white;
-	border-bottom: 2px solid;
-	border-top: 2px solid;
-	border-top-color: gold;
 	box-sizing: border-box;
 
 }
@@ -268,30 +313,18 @@ main-menu:hover{
 	.spotify-embed {width: 100%;}
 }
 
-.youtube-title{
-	padding-left: 23px;
 
-}
 
 .spotify-title{
 	padding-right: 23px;
+	font-family: 'Raleway', sans-serif;
 
-}
-
-.youtube-embed{
-	text-align: center;
-	justify-content: center;
-	padding-bottom: 55px;
-	margin: 0 auto;
-	padding-left: 45px;
 }
 
 .spotify-embed{
 	text-align: center;
 	justify-content: center;
 	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 45px;
 	padding-bottom: 55px;
 
 }
@@ -303,6 +336,10 @@ main-menu:hover{
 	box-sizing: border-box;
 }
 
+.border-line{
+	width: 85%;
+	
+}
 
 .image-container{
 	width: 85%;
@@ -319,7 +356,7 @@ main-menu:hover{
 .row5{
 	min-height: 250px;
 	width: 100%;
-	background-color: white;
+	background-color: lightgrey;
 	opacity: 50%;
 	box-sizing: border-box;
 }
@@ -333,11 +370,7 @@ main-menu:hover{
 .partner-logos{
 	padding: 20px;
 	float: left;
-	border: 1px solid white;
 	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
-
 }
 
 .partner-logo-container{
@@ -353,13 +386,6 @@ main-menu:hover{
 
 .bottom{
 	padding-bottom: 45px;
-}
-
-.row6{
-	min-height: 250px;
-	width: 100%;
-	background-color: rgb(173, 171, 171);
-	box-sizing: border-box;
 }
 
 
@@ -421,37 +447,44 @@ main-menu:hover{
 
 /*abouttheinstructor*/
 
-.about-brandon{
+.about-brandon-image{
 	float: left;
-	margin: 0;
+	margin-top: 45px;
+	/*padding-top: 45px;*/
+	padding-bottom: 65px;
 	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.brandon{
+	padding-top:45px;
 
 }
+
+.brandon-text{
+	padding-left: 450px;
+}
+
+
+
+#faq-title{
+	color: purple;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.faq-accordion{
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

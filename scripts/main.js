@@ -29,16 +29,35 @@ $('.main-sub-title')
 
 
 
+// $('.resizableImage').hover(makeBigger, returnToOriginalSize);
+
+// function makeBigger() {
+//     $(this).css({height: '+=2%', width: '+=2%'});
+// }
+// function returnToOriginalSize() {
+//     $(this).css({height: "180px", width: "250px"});
+// }
 
 
 
-
-
-$('.resizableImage').hover(makeBigger, returnToOriginalSize);
+$('.resizableImageBrandon').hover(makeBigger, returnToOriginalSize);
 
 function makeBigger() {
-    $(this).css({height: '+=10%', width: '+=10%'});
+    $(this).css({height: '+=3%', width: '+=3%'});
 }
 function returnToOriginalSize() {
-    $(this).css({height: "180px", width: "250px"});
+    $(this).css({height: "516px", width: "387px"});
 }
+
+
+
+
+$('.ui.accordion')
+  .accordion()
+;
+
+
+
+
+
+
