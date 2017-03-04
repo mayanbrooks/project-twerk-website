@@ -6,9 +6,16 @@ $('.main-menu').hover(function(){
 
 
 
-$('.js-submit').click(function(){
+// $('.js-submit').click(function(changeText){
 
-});
+// 	function changeText('Submitted');
+// });
+
+
+
+
+
+
 
 // function doSomthing(){
 // 	alert('Hi!');
