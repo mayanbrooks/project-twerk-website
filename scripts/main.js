@@ -1,6 +1,12 @@
 $('.main-menu').hover(function(){
-    $(this).css("color", "purple")
+    $(this).css("color", "purple");
 });
+
+$('.open-modal').click(function() {
+  $('.ui.modal')
+    .modal('show');
+});
+
 
 
 
@@ -62,9 +68,3 @@ function returnToOriginalSize() {
 $('.ui.accordion')
   .accordion()
 ;
-
-
-
-
-
-
