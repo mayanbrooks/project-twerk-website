@@ -1,4 +1,5 @@
 var keys = require("./config");
+console.log(keys);
 
 process.env.SECRET_KEY = keys.SECRET_KEY;
 process.env.PUBLISHABLE_KEY = keys.PUBLISHABLE_KEY;
