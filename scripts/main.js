@@ -1,43 +1,23 @@
 $('.main-menu').hover(function(){
-    $(this).css("color", "purple");
+    $(this).css("color", "#000066");
+});
+
+$('.nav-links').hover(function(){
+  $(this).css("color", "#000066");
 });
 
 $('.open-modal').click(function() {
-  $('.ui.modal')
+  $('.ui.modal.mymodal')
     .modal('show');
 });
 
+// lua code for stripe
 
 
 
-
-
-// $('.js-submit').click(function(changeText){
-
-// 	function changeText('Submitted');
-// });
-
-
-
-
-
-
-
-// function doSomthing(){
-// 	alert('Hi!');
-// }
-
-// $('body').click(doSomthing);
-
-
-
-
-
-
-$('.main-sub-title')
-  .transition('fly right')
-;
-
+$('.js-submit').click(function(){
+  $(this).html('Submitted');
+});
 
 
 

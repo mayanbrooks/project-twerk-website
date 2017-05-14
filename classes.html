@@ -77,7 +77,7 @@
     <div class="clearfix">
 
       <div class="col-one-third">
-        <div class="package boxed">
+        <div class="package boxed open-modal">
           <div class=" package package-title">
             1
           </div>
@@ -97,7 +97,7 @@
 
       </div>
       <div class="col-one-third">
-        <div class="package boxed">
+        <div class="package boxed open-modal">
           <div class=" package package-title">
             5
           </div>
@@ -139,12 +139,21 @@
 
   </section>
 
-  <div class="ui modal">
-  <div class="header">Header</div>
+  <div class="ui modal mymodal">
+  <div class="header">Payment Here</div>
   <div class="content">
-    <p></p>
-    <p></p>
-    <p></p>
+		<form action="http://demo-bsbmej.webscript.io/script" method="POST">
+		  <script
+		    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+		    data-key="pk_test_7fpPwU9xfngIbMCkOULqWQSD"
+				data-amount="999"
+		    data-name="Stripe.com"
+		    data-description="Widget"
+		    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+		    data-locale="auto"
+		    data-zip-code="true">
+		  </script>
+		</form>
   </div>
 </div>
 

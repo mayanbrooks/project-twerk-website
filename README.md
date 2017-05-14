@@ -1,6 +1,6 @@
 # project-twerk-website
 
-This is a website for a fitness class called TwerkAerobics. Designed with some Semantic UI. 
+This is a website for a fitness class called TwerkAerobics.  
 
-Used in this project are the following components:
-HTML, CSS, Javascript, SnapWidget, Google Maps Widget, Spotify Wdiget
+This site has the following dependencies:
+JQUERY, SnapWidget, Google Maps Widget, Spotify Widget, Semantic UI. Images are attributed to PEXELS.com.
