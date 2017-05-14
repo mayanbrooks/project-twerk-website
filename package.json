@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mayanbrooks/project-twerk-website#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "stripe": "^4.19.0"
   }
 }
