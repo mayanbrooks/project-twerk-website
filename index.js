@@ -1,14 +1,24 @@
-var SECRET_KEY = "sk_test_VDn5o8Jc7JuB48LFh0aLT9yC";
-var PUBLISHABLE_KEY = 'pk_test_7fpPwU9xfngIbMCkOULqWQSD';
+var keys = require("./config");
+
+process.env.SECRET_KEY = keys.SECRET_KEY;
+process.env.PUBLISHABLE_KEY = keys.PUBLISHABLE_KEY;
 
 var keyPublishable = process.env.PUBLISHABLE_KEY;
 var keySecret = process.env.SECRET_KEY;
 
-var app = require("express")();
+var express = require("express");
+var app = express();
 var stripe = require("stripe")(keySecret);
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 
 app.set('port', (process.env.PORT || 5000));
+app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'));
 
@@ -32,26 +42,34 @@ app.get('/classes.html', function(request, response) {
 app.post("/charge", function (req, res) {
   var amount = 1500;
 
+
+  console.log('----CL--------');
+  console.log(req.body);
+  console.log('------------');
+
   stripe.customers.create({
      email: req.body.stripeEmail,
     source: req.body.stripeToken
   })
   .then(function (customer) {
     stripe.charges.create({
-      amount: customer.amount,
+      amount: amount,
       description: "Sample Charge",
          currency: "usd",
          customer: customer.id
     });
+    console.log("customer: ", customer);
   })
   .catch(function (err) {
     console.log("Error:", err);
   })
 
   .then(function (charge) {
-    res.render("thankyou.html");
+    console.log("charge: ", charge);
+    res.render("thankyou");
   });
-});
+ }
+);
 
 // routes - faq
 app.get('/faq.html', function(request, response) {
